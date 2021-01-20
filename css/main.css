@@ -1,0 +1,246 @@
+/*Header parallax start*/
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+header {
+  position: relative;
+  padding: 50px 80px 0;
+  box-sizing:border-box;
+  z-index: 5;
+}
+
+.nav__bar {
+  max-width: 1760px;
+  height: 25px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 5;
+}
+
+.logo {
+  width: 108px;
+  height: 24px;
+  left: 0px;
+  top: 0px;
+}
+
+.header__list {
+  width: 283px;
+  height: 22px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__item-text {
+  transition: 0.3s ease-in-out;
+  text-decoration: none;
+  font-family: Gilroy;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 32px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: block;
+}
+
+.header__item-text:hover {
+  transform: translateY(-4px);
+  color: #FBD784;
+}
+
+.account {
+  transition: 0.3s ease-in-out;
+  font-family: Gilroy;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 32px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.account::before {
+  content: '';
+  background: url(../img/user-icon.svg);
+  background-repeat: no-repeat;
+
+}
+
+.account:hover {
+  transform: translateY(-4px);
+  color: #FBD784;
+}
+
+.parallax__wrapper {
+  position: relative;
+  transition: all 1s ease-in-out;
+}
+
+.parallax {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  transition: inherit;
+}
+
+.parallax__img-1 {
+  background: url(../img/top-img.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: top;
+  transition: inherit;
+  z-index: 2;
+  height: 1600px;
+  width: calc(100% + 20px);
+  left: -10px;
+  right: -20px;
+  top: -73px;
+}
+
+.parallax__img-2 {
+  background: url(../img/center-img.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: top;
+  transition: inherit;
+  z-index: 2;
+  height: 926px;
+  width: calc(100% + 20px);
+  left: -10px;
+  right: -20px;
+  top: 277px;
+  /* top: 70%; */
+}
+
+.parallax__img-3 {
+  background: url(../img/bottom-img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  transition: inherit;
+  z-index: 4;
+  width: calc(100% + 20px);
+  left: -10px;
+  right: -20px;
+  height: 700px;
+  top: 463px;
+}
+
+.gradient-img {
+  background: url(../img/gradient-img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  transition: inherit;
+  width: calc(100% + 20px);
+  left: -10px;
+  right: -10px;
+  height: 700px;
+  top: 735px;
+  z-index: 5;
+}
+
+
+.gradient-hero {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(135deg, #0b1d26, transparent 87%);
+  opacity: 0.6;
+  z-index: 2;
+}
+
+.content__wrapper {
+  position: fixed;
+  z-index: 3;
+  left: 0;
+  right: 0;
+}
+
+.content {
+  max-width: 790px;
+  margin: 0 auto;
+}
+
+.tagline__wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 150px;
+  margin-bottom: 32px;
+}
+
+.line {
+  width: 72px;
+  height: 2px;
+  background: #FBD784;
+  margin-right: 32px;
+}
+
+.tag {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  color: #FBD784;
+}
+
+.content__title {
+  max-width: 790px;
+  height: 200px;
+  text-align: left;
+  font-family: Chronicle Display;
+  font-weight: 325;
+  font-size: 75px;
+  line-height: 120%;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+}
+
+.scroll__down {
+  transition: 0.3s ease-in-out;
+  max-width: 126px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.scroll__down:hover .scroll__text {
+  color: #FBD784;
+}
+.scroll__down:hover .scroll__ico path {
+  fill: #FBD784;
+}
+
+.scroll__text {
+  transition: inherit;
+  margin-right: 16px;
+  font-family: Gilroy;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 32px;
+  color: #FFFFFF;
+}
+.scroll__ico {
+  transition: inherit;
+  width: 16px;
+  height: 24px;
+}
+
+.scroll__ico  path {
+  transition: inherit;
+}
+
+/*Header parallax end*/

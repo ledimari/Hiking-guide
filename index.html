@@ -3,12 +3,71 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Hiking-guide</title>
+  <link rel="stylesheet" href="https://cdn.rawgit.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css">
+  <link href="http://fonts.cdnfonts.com/css/chronicle-display" rel="stylesheet">
   <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-  Hello world!
+<!-- Header parallax start -->
+
+  <section class="hero">
+    <header>
+      <div class="nav__bar">
+        <div class="logo">
+          <img src="../hiking-guide/img/logo.svg" alt="logo" class="logo__img">
+        </div>
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__item"><a href="#" class="header__item-text">
+              Equipment
+            </a></li>
+            <li class="header__item"><a href="#" class="header__item-text">
+              About us
+            </a></li>
+            <li class="header__item"><a href="#" class="header__item-text">
+              Blog
+            </a></li>
+          </ul>
+        </nav>
+        <div class="account">
+          Account
+        </div>
+      </div>
+    </header>
+
+    <div class="parallax__wrapper">
+      <div data-speed="1" data-inverse="1" class="parallax parallax__img-1"></div>
+      <div data-speed="4" data-inverse="0" class="parallax parallax__img-2"></div>
+      <div data-speed="1" data-inverse="0" class="parallax parallax__img-3"></div>
+      <div data-speed="4" data-inverse="0" class="parallax gradient-img"></div>
+    </div>
+
+    <div class="content__wrapper">
+      <div class="content">
+        <div class="tagline__wrapper">
+          <div class="line"></div>
+          <div class="tag">A Hiking guide</div>
+        </div>
+        <h1 class="content__title">
+          Be prepared for the Mountains and beyond!
+        </h1>
+        <div class="scroll__down">
+          <div class="scroll__text">scroll down</div>
+         <svg class="scroll__ico" width="16" height="24" viewBox="0 0 16 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M16 16L14.59 14.59L9 20.17V0H7V20.17L1.42 14.58L0 16L8 24L16 16Z" fill="white"/>
+        </svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="gradient-hero"></div>
+    
+  </section>
+
+<!-- Header end -->
+
   <script src="./js/main.js"></script>
 </body>
 </html>
